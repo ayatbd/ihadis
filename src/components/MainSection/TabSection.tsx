@@ -1,11 +1,11 @@
 
 
-const ContentTabSection = () => {
+const TabSection = () => {
     return (
         <div className="col-start-1 hidden xl-min:block category-bar w-[350px] lg-max:w-full">
             <div className="rounded-2xl h-[calc(100vh_-_115px)] bg-white dark:bg-hadith-dark-card flex items-center flex-col">
                 <div className="border-b-[1px] lg-max:border-y-[1px] lg-max:dark:border-y-[1px] w-full flex items-center justify-center text-lg text-white border-[#ECEEF0] dark:border-dark-cat-border">
-                    <p className="bg-white dark:bg-hadith-dark-card text-black dark:text-hadith-deepoffwhite} w-1/2 text-center py-3 cursor-pointer rounded-tl-2xl text-xl style-Kalpurush-webKit">বই</p>
+                    <p className="bg-white dark:bg-hadith-dark-card text-black dark:text-hadith-deepoffwhite w-1/2 text-center py-3 cursor-pointer rounded-tl-2xl text-xl style-Kalpurush-webKit">বই</p>
                     <p className="bg-hadith-button-background text-white} text-xl style-Kalpurush-webKit w-1/2 text-center  py-3 cursor-pointer rounded-tr-xl">অধ্যায়</p>
                 </div>
                 <div className="w-full h-[50px] category-bar">
@@ -16,6 +16,12 @@ const ContentTabSection = () => {
                     <div className="pl-4 cat-scrl lg-max:h-[calc(100vh_-_200px)] lg-max:pb-10 lg-min:h-[calc(100vh_-_270px)] pr-1.5 mr-1.5 mt-4">
                         <div className="flex gap-y-2 flex-col w-full">
                             <div className="p-4 flex  group cursor-pointer  false bg-[#ebfcf6] dark:bg-darkchapter-list-hover justify-between items-center rounded-2xl h-[6.25rem]">
+                                <div className="flex items-center gap-4">
+                                    <div className="h-12 w-12 sm-max:w-10 xl:w-10  flex items-center justify-center relative">
+                                        <h3 className="text-white dark:text-white false style-Kalpurush absolute md-max:text-base text-xl font-medium  group-hover:opacity-100  xl:text-lg">১</h3><svg className="fill-subcat-hover false    " width="56" height="62" viewBox="0 0 56 62" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.375 3.11362C25.8558 1.104 30.1442 1.104 33.625 3.11362L49.3378 12.1854C52.8186 14.195 54.9628 17.909 54.9628 21.9282V40.0718C54.9628 44.091 52.8186 47.805 49.3378 49.8146L33.625 58.8864C30.1442 60.896 25.8558 60.896 22.375 58.8864L6.66219 49.8146C3.18143 47.805 1.03719 44.091 1.03719 40.0718V21.9282C1.03719 17.909 3.18143 14.195 6.66219 12.1854L22.375 3.11362Z" stroke-width="1.5"></path></svg>
+                                    </div>
+                                    <div className="flex flex-col justify-between gap-1.5 group"><h4 className="text-hadith-black dark:text-hadith-deepoffwhite style-Kalpurush max-line-2">ওহীর সূচনা অধ্যায়</h4><div className="text-[#40404099] dark:text-dark-text-subtitle style-Kalpurush-dropdown text-sm leading-[26px] md:text-[13px]">হাদিসের রেঞ্জ: <span>১ - ৭</span></div></div>
+                                </div>
 
                             </div>
                         </div>
@@ -27,4 +33,4 @@ const ContentTabSection = () => {
     );
 };
 
-export default ContentTabSection;
+export default TabSection;
